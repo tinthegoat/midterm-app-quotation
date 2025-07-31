@@ -48,7 +48,7 @@ function App() {
     
     setDataItems((prev) => {
       const index = prev.findIndex(
-        (i) => i.item === newItem.item && i.ppu === newItem.ppu
+        (i) => i.item === newItem.item && i.ppu === newItem.ppu && i.discount === newItem.discount
       );
       if (index !== -1) {
         const updated = [...prev];
